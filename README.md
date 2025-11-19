@@ -6,6 +6,8 @@ A high-performance Large Language Model inference engine written in pure Object 
 
 PasLLM is a native Pascal implementation for running LLMs locally with optimized quantization and inference capabilities. It supports multiple model architectures and features advanced 4-bit quantization formats for efficient model deployment.
 
+It is currently CPU-only, with no GPU acceleration. GPU acceleration will be added in the future using my PasVulkan framework, but this will take time and effort. Until at least Q2 2026, I'm focusing on other professional projects, so please be patient. The same applies to support for multi-modal models, models with newer architectures (Mamba, etc.) and so on.
+
 ## Features
 
 - **Pure Object Pascal** - No Python or external dependencies for inference
