@@ -301,7 +301,7 @@ Let $w$ be a float32 weight in a block $W$.
 
 $$
 s = \max_{w\in W} |w|
-\quad\text{(stored as fp8\_e5m2, rounded up to next representable)}
+\quad\text{(stored as }\mathtt{fp8\_e5m2}\text{, rounded up to next representable)}
 $$
 
 2. **Normalize**
