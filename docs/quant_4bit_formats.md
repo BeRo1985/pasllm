@@ -541,6 +541,7 @@ Byte[18] = int8(c * 127)
   * **Q42NL / Q43NL:** nibble unpack → parametric nonlinearity $f(x,c)$ using per-block curve parameter → multiply by scale. Slightly more complex than Q40NL/Q41NL but still analytic.
   * **IQ4\_NL / NF4:** nibble unpack → single LUT read → multiply by scale (branch-free).
   * **NVFP4 / MXFP4:** nibble unpack → FP4 decode (tiny table/arithmetic) → multiply by per-block scale. **E8M0** can be implemented as an exponent bias (power-of-two).
+  * **Q4\_0:** nibble unpack → linear scaling (multiply by scale / 7).
   * **Q8\_0:** byte load (int8) → multiply by scale.
   * **FP16 / BF16:** dtype cast to f32 (no per-block logic). **FP32:** identity.
 
