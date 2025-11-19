@@ -98,10 +98,8 @@ Dual-licensed under:
 GitHub: [@BeRo1985](https://github.com/BeRo1985)  
 Contact: benjamin@rosseaux.com
 
-## Contributing
+## Additional Information
 
-Contributions are welcome! Please ensure:
 - Code is compatible with both Delphi ≥11.2 and FreePascal ≥3.3.1
 - Compiles on 32-bit and 64-bit platforms (x86-32, x86-64, ARM, ARM64), but 64-bit is preferred due to model sizes (32-bit may run out of memory). The 64-bit targets are more tested and verified. 32-bit support is unofficial and at your own risk.
 - No platform-specific or third-party dependencies (unless out-ifdef-able)
-- Follows the contribution guidelines in `src/PasLLM.pas`
