@@ -21,7 +21,7 @@ It is currently CPU-only, with no GPU acceleration. GPU acceleration will be add
 
 PasLLM implements several custom 4-bit and 8-bit quantization formats designed for optimal quality/size tradeoff:
 
-- **Q40NL** - 4.5 bits/weight with non-linear decode (drop-in replacement for Q4_0)
+- **Q40NL** - 4.5 bits/weight with non-linear decode (often better than Q40) 
 - **Q41NL** - Alternative non-linearity with increased tail emphasis
 - **Q42NL** - Enhanced variant with improved reconstruction
 - **Q43NL** - Advanced format with multiple optimization methods (gradient, coarse-fine, grid)
