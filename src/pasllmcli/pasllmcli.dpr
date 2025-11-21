@@ -191,6 +191,9 @@ begin
       if SplitterPosition>0 then begin
        Name:=Trim(Copy(ArgumentString,1,SplitterPosition-1));
        Value:=Trim(Copy(ArgumentString,SplitterPosition+1,length(ArgumentString)-SplitterPosition));
+       if (length(Value)>1) and (Value[1]='"') and (Value[length(Value)]='"') then begin
+        Value:=Trim(Copy(Value,2,length(Value)-2));
+       end;
       end else begin
        Name:=Trim(ArgumentString);
        Value:='';
